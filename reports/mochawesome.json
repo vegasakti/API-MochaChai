@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-05-13T08:53:59.606Z",
-    "end": "2023-05-13T08:54:00.742Z",
-    "duration": 1136,
-    "testsRegistered": 1,
+    "start": "2023-05-13T10:43:02.610Z",
+    "end": "2023-05-13T10:43:04.477Z",
+    "duration": 1867,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "56f8c570-9281-40ed-90ee-cfba1d443ff7",
+      "uuid": "eda6c097-f5c1-4715-8e16-33d1b82a569e",
       "title": "",
-      "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\auth.test.js",
-      "file": "\\test\\scenario\\auth.test.js",
+      "fullFile": "",
+      "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "6e8e6893-ae7d-41e3-ac6a-6348b0d37901",
+          "uuid": "46c97e5a-f693-4ae2-81bf-37afdb503e67",
           "title": "As a User, I want to create auth token",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\auth.test.js",
           "file": "\\test\\scenario\\auth.test.js",
@@ -38,7 +38,7 @@
               "title": "should sucesfully create auth token",
               "fullTitle": "As a User, I want to create auth token should sucesfully create auth token",
               "timedOut": false,
-              "duration": 1130,
+              "duration": 1116,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,59 @@
               "context": null,
               "code": "const response = await herokuApi.auth(data.VALID_AUTH);\nassert.equal(response.status, 200);\nassert.isString(response.data.token);\n       // expect(response.data).to.be.jsonSchema(shcema.AUTH_SCHEMA);\nassert.jsonSchema(response.data, shcema.AUTH_SCHEMA);",
               "err": {},
-              "uuid": "65bbb091-64e0-4110-b311-8dc67ad8a36e",
-              "parentUUID": "6e8e6893-ae7d-41e3-ac6a-6348b0d37901",
+              "uuid": "321d70fe-dd68-4ce1-92ec-720c256a9a62",
+              "parentUUID": "46c97e5a-f693-4ae2-81bf-37afdb503e67",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "65bbb091-64e0-4110-b311-8dc67ad8a36e"
+            "321d70fe-dd68-4ce1-92ec-720c256a9a62"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1130,
+          "duration": 1116,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "13fd386a-c6e8-4a15-9554-bd0267083b1f",
+          "title": "Delete",
+          "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\delete.test.js",
+          "file": "\\test\\scenario\\delete.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should sucessfull delete booking ID",
+              "fullTitle": "Delete it should sucessfull delete booking ID",
+              "timedOut": false,
+              "duration": 742,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await herokuApi.delete();\nassert.equal(response.status, 201);",
+              "err": {},
+              "uuid": "0d706e5f-497f-49a2-9ad6-774d3bd88ad7",
+              "parentUUID": "13fd386a-c6e8-4a15-9554-bd0267083b1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0d706e5f-497f-49a2-9ad6-774d3bd88ad7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 742,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

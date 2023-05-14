@@ -8,7 +8,7 @@ import * as shcema from '$root/json_schema/booking.id.schema';
 chai.use(JsonSchema);
 
 
-describe.only('As a User, I want to get booking id', () => {
+describe('As a User, I want to get booking id', () => {
     it('should sucesfully get booking id when insert a valid data', async () => {
         const response = await herokuApi.getBookingId();
 

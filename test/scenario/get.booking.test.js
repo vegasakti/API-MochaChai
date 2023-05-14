@@ -14,8 +14,6 @@ describe('As a User, I want to get booking', () => {
 
         assert.equal(response.status, 200);
         assert.jsonSchema(response.data, shcema.BOOKING_SCHEMA);
-        console.log(response.data)
     });
-
 
 });

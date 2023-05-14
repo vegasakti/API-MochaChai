@@ -18,4 +18,6 @@ describe('As a User, I want to create auth token', () => {
         assert.jsonSchema(response.data, shcema.AUTH_SCHEMA);
 
     });
+
+
 });

@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-05-14T16:38:52.032Z",
-    "end": "2023-05-14T16:38:53.370Z",
-    "duration": 1338,
+    "failures": 0,
+    "start": "2023-05-14T16:41:40.961Z",
+    "end": "2023-05-14T16:41:42.592Z",
+    "duration": 1631,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "87ab99ab-f4ce-48c8-8410-2a00f91e85e9",
+      "uuid": "7c5c6352-d857-4d69-82d7-1338818448f0",
       "title": "",
       "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\get.booking.id.test.js",
       "file": "\\test\\scenario\\get.booking.id.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d64989cd-581d-4b41-94ce-e867cbc98c59",
+          "uuid": "a2196e25-556c-4153-939e-2b67ef238042",
           "title": "As a User, I want to get booking id",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\get.booking.id.test.js",
           "file": "\\test\\scenario\\get.booking.id.test.js",
@@ -38,33 +38,29 @@
               "title": "should sucesfully get booking id when insert a valid data",
               "fullTitle": "As a User, I want to get booking id should sucesfully get booking id when insert a valid data",
               "timedOut": false,
-              "duration": 1331,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 1625,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "const response = await herokuApi.getBookingId();\nassert.equal(response.status, 200);\nassert.jsonSchema(response.data, shcema.BOOKINGID_SCHEMA);\nconsole.log(response.data)",
-              "err": {
-                "message": "AssertionError: schema: expected undefined to be truthy",
-                "estack": "AssertionError: schema: expected undefined to be truthy\n    at Proxy.<anonymous> (node_modules\\chai-json-schema\\index.js:132:16)\n    at Proxy.methodWrapper (node_modules\\chai\\lib\\chai\\utils\\addMethod.js:57:25)\n    at Function.assert.jsonSchema (node_modules\\chai-json-schema\\index.js:183:44)\n    at Context.<anonymous> (file:///E:/QA/Automation/NEST/API/batch9/test/scenario/get.booking.id.test.js:16:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
-                "diff": null
-              },
-              "uuid": "a5f5a8ea-45b5-4bd4-9d7f-cf7f29fd90ab",
-              "parentUUID": "d64989cd-581d-4b41-94ce-e867cbc98c59",
+              "code": "const response = await herokuApi.getBookingId();\nassert.equal(response.status, 200);\nconsole.log(response.data)\nassert.jsonSchema(response.data, shcema.BOOKINGID_SCHEMA);",
+              "err": {},
+              "uuid": "7b41a5b9-dcb4-49fd-b6f7-5d0760ca9b21",
+              "parentUUID": "a2196e25-556c-4153-939e-2b67ef238042",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "a5f5a8ea-45b5-4bd4-9d7f-cf7f29fd90ab"
+          "passes": [
+            "7b41a5b9-dcb4-49fd-b6f7-5d0760ca9b21"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1331,
+          "duration": 1625,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -97,9 +93,7 @@
       "version": "7.1.3"
     },
     "marge": {
-      "options": {
-        "reportDir": "reports"
-      },
+      "options": null,
       "version": "6.2.0"
     }
   }

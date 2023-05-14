@@ -2,3 +2,7 @@ node_modules
 .env
 yarn.lock
 reports
+test/scenario/auth.test.js
+test/scenario/delete.test.js
+scenario/user.data.js
+.gitignore

@@ -11,7 +11,7 @@ import { UPDATE_SCHEMA2 } from "../json_schema/update.schema";
 
 chai.use(JsonSchema);
 
-describe.only('updatebooking', () => {
+describe('updatebooking', () => {
     it('should sucesfully update booking', async () => {
         let booking =  {
             "firstname" : "Jim",

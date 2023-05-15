@@ -151,5 +151,4 @@ describe('Partial Update Booking', () => {
         assert.equal(resPartialUpdate.statusText, "Unprocessed Entity");
         assert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);
     }).timeout(15000);
-
 })

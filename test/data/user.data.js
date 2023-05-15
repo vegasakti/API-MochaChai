@@ -3,6 +3,11 @@ export const VALID_AUTH = {
     "password": "password123"
 }
 
+export const INVALID_AUTH = {
+    "username": "admin",
+    "password": "password"
+}
+
 export const PARTIAL_UPDATE_CASE_1 = {
     "additionalneeds": "Extra bed"
 }

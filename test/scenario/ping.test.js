@@ -7,5 +7,5 @@ describe('Ping - Check Health', () => {
 
         assert.equal(response.status, 201);
         assert.equal(response.statusText, "Created");
-    }).timeout(15000);
+    }).timeout(15000); 
 });

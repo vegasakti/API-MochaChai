@@ -19,5 +19,11 @@ describe('As a User, I want to create auth token', () => {
 
     });
 
+    it('should failed create auth token', async () => {
+        const response = await herokuApi.auth(data.INVALID_AUTH);
 
+        assert.equal(response.status, 400);
+        assert.jsonSchema(response.data, shcema.INVALID_AUTH_SCHEMA);
+
+    });
 });

@@ -39,5 +39,5 @@ export const UPDATE_SCHEMA = {
     "depositpaid",
     "bookingdates",
     "additionalneeds"
-  ]
+  ] 
 }

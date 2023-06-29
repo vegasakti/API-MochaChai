@@ -1,9 +1,9 @@
 {
-  "name": "final-project-qa-batch9",
+  "name": "restful-booker",
   "version": "1.0.0",
-  "description": "API Testing Batch9",
+  "description": "API Testing MochaChai",
   "main": "index.js",
-  "author": "Kelompok 1",
+  "author": "Budi",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.4.0",
@@ -23,5 +23,6 @@
     "$root": "test",
     "$helper": "test/helper"
   },
-  "type": "module"
+  "type": "module",
+  "repository": "git@github.com:vegasakti/API-MochaChai.git"
 }

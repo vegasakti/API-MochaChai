@@ -5,9 +5,9 @@
     "passes": 16,
     "pending": 0,
     "failures": 5,
-    "start": "2023-06-29T16:37:47.458Z",
-    "end": "2023-06-29T16:38:10.243Z",
-    "duration": 22785,
+    "start": "2023-06-29T16:57:05.612Z",
+    "end": "2023-06-29T16:57:29.321Z",
+    "duration": 23709,
     "testsRegistered": 21,
     "passPercent": 76.19047619047619,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7b5f74ec-553c-4523-8921-4691df7c815c",
+      "uuid": "d0315908-1423-4711-9b51-a52f99626e62",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
           "title": "\"before all\" hook in \"{root}\"",
           "fullTitle": "\"before all\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 1733,
+          "duration": 1714,
           "state": null,
           "speed": null,
           "pass": false,
@@ -36,8 +36,8 @@
           "context": null,
           "code": "const resDelBookingID = await herokuApi.get_booking_id();\n//console.log(resGetBookingID);\n\nglobal.bookingId = resDelBookingID.data[getRandomInt(100)].bookingid;\n// console.log(bookingId);\n// console.log(getRandomInt(13));",
           "err": {},
-          "uuid": "5ef623ed-cd47-435e-8f3f-4dac83291a20",
-          "parentUUID": "7b5f74ec-553c-4523-8921-4691df7c815c",
+          "uuid": "0ce300a3-67f4-4346-90f3-2ad6f835d39d",
+          "parentUUID": "d0315908-1423-4711-9b51-a52f99626e62",
           "isHook": true,
           "skipped": false
         },
@@ -45,7 +45,7 @@
           "title": "\"before all\" hook in \"{root}\"",
           "fullTitle": "\"before all\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 1154,
+          "duration": 1505,
           "state": null,
           "speed": null,
           "pass": false,
@@ -54,8 +54,8 @@
           "context": null,
           "code": "const resGetBookingID = await herokuApi.get_booking_id();\n//console.log(resGetBookingID);\n\nglobal.bookingID = resGetBookingID.data[getRandomInt(13)].bookingid;\n//console.log(bookingID);\n//console.log(getRandomInt(13));",
           "err": {},
-          "uuid": "3bf05eeb-89e7-44c8-9fb4-fe396ac35b53",
-          "parentUUID": "7b5f74ec-553c-4523-8921-4691df7c815c",
+          "uuid": "e32897a4-6859-4f3a-a1cc-1ea096bd97af",
+          "parentUUID": "d0315908-1423-4711-9b51-a52f99626e62",
           "isHook": true,
           "skipped": false
         }
@@ -64,7 +64,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "580cdf59-be4b-49aa-81ec-984afe7b9c46",
+          "uuid": "94384cf3-cf4d-4c13-90a9-4df4d815bc02",
           "title": "As a User, I want to create auth token",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\auth.test.js",
           "file": "\\test\\scenario\\auth.test.js",
@@ -75,7 +75,7 @@
               "title": "should sucesfully create auth token",
               "fullTitle": "As a User, I want to create auth token should sucesfully create auth token",
               "timedOut": false,
-              "duration": 939,
+              "duration": 856,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -84,8 +84,8 @@
               "context": null,
               "code": "const response = await herokuApi.auth(data.VALID_AUTH);\nassert.equal(response.status, 200);\nassert.isString(response.data.token);\n       // expect(response.data).to.be.jsonSchema(shcema.AUTH_SCHEMA);\nassert.jsonSchema(response.data, shcema.AUTH_SCHEMA);",
               "err": {},
-              "uuid": "901b7336-33c8-4b0e-866f-a7daeb2d8749",
-              "parentUUID": "580cdf59-be4b-49aa-81ec-984afe7b9c46",
+              "uuid": "c4037e0d-4b3c-4e4f-8de8-83ef6bb2fa44",
+              "parentUUID": "94384cf3-cf4d-4c13-90a9-4df4d815bc02",
               "isHook": false,
               "skipped": false
             },
@@ -93,7 +93,7 @@
               "title": "should failed create auth token",
               "fullTitle": "As a User, I want to create auth token should failed create auth token",
               "timedOut": false,
-              "duration": 943,
+              "duration": 889,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -106,28 +106,28 @@
                 "estack": "AssertionError: expected 200 to equal 401\n    at Context.<anonymous> (file:///E:/QA/Automation/NEST/API/batch9/test/scenario/auth.test.js:25:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 200\n+ 401\n"
               },
-              "uuid": "f1aaf14f-344a-44a1-b9df-bb3d779fe093",
-              "parentUUID": "580cdf59-be4b-49aa-81ec-984afe7b9c46",
+              "uuid": "39237b5f-21ba-4cd9-8e85-989a2c1f3af1",
+              "parentUUID": "94384cf3-cf4d-4c13-90a9-4df4d815bc02",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "901b7336-33c8-4b0e-866f-a7daeb2d8749"
+            "c4037e0d-4b3c-4e4f-8de8-83ef6bb2fa44"
           ],
           "failures": [
-            "f1aaf14f-344a-44a1-b9df-bb3d779fe093"
+            "39237b5f-21ba-4cd9-8e85-989a2c1f3af1"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1882,
+          "duration": 1745,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "674c410a-3f99-4d53-b12a-9ea7bc70cffb",
+          "uuid": "ce460ad0-a177-4aee-89a2-dc66ba032ea1",
           "title": "booking",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\booking.test.js",
           "file": "\\test\\scenario\\booking.test.js",
@@ -138,7 +138,7 @@
               "title": "should sucesfully create booking",
               "fullTitle": "booking should sucesfully create booking",
               "timedOut": false,
-              "duration": 980,
+              "duration": 943,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -151,8 +151,8 @@
                 "estack": "AssertionError: expected 500 to equal 200\n    at Context.<anonymous> (file:///E:/QA/Automation/NEST/API/batch9/test/scenario/booking.test.js:26:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 500\n+ 200\n"
               },
-              "uuid": "f2341c7f-6a59-40ef-9d9e-42a3a11ccc45",
-              "parentUUID": "674c410a-3f99-4d53-b12a-9ea7bc70cffb",
+              "uuid": "cf908d16-20a3-4e70-abd1-92f99f84d072",
+              "parentUUID": "ce460ad0-a177-4aee-89a2-dc66ba032ea1",
               "isHook": false,
               "skipped": false
             }
@@ -160,17 +160,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "f2341c7f-6a59-40ef-9d9e-42a3a11ccc45"
+            "cf908d16-20a3-4e70-abd1-92f99f84d072"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 980,
+          "duration": 943,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "678b0e88-f89e-4940-ba89-27433031f39d",
+          "uuid": "787f7064-c244-4f88-bc89-99e267b5864e",
           "title": "As a User, I want to delete an id",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\delete.test.js",
           "file": "\\test\\scenario\\delete.test.js",
@@ -181,7 +181,7 @@
               "title": "should sucessfull delete booking ID",
               "fullTitle": "As a User, I want to delete an id should sucessfull delete booking ID",
               "timedOut": false,
-              "duration": 968,
+              "duration": 886,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -190,8 +190,8 @@
               "context": null,
               "code": "const response = await herokuApi.delete();\nassert.equal(response.status, 201);\nassert.strictEqual(typeof response.data, 'string');",
               "err": {},
-              "uuid": "1c988b95-05f9-4e33-ba7c-aab0a7d6063b",
-              "parentUUID": "678b0e88-f89e-4940-ba89-27433031f39d",
+              "uuid": "0f1df8d9-f4e0-4f86-a9c2-02261367522a",
+              "parentUUID": "787f7064-c244-4f88-bc89-99e267b5864e",
               "isHook": false,
               "skipped": false
             },
@@ -199,7 +199,7 @@
               "title": "should not sucessfull delete invalid booking ID",
               "fullTitle": "As a User, I want to delete an id should not sucessfull delete invalid booking ID",
               "timedOut": false,
-              "duration": 901,
+              "duration": 842,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -208,27 +208,27 @@
               "context": null,
               "code": "const response = await herokuApi.delete();\nassert.equal(response.status, 405);\nassert.strictEqual(typeof response.data, 'string');",
               "err": {},
-              "uuid": "81d218c0-7c77-46c6-9b84-611144ebb5d4",
-              "parentUUID": "678b0e88-f89e-4940-ba89-27433031f39d",
+              "uuid": "b6a3922d-2f71-476e-9e47-112db9c77708",
+              "parentUUID": "787f7064-c244-4f88-bc89-99e267b5864e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1c988b95-05f9-4e33-ba7c-aab0a7d6063b",
-            "81d218c0-7c77-46c6-9b84-611144ebb5d4"
+            "0f1df8d9-f4e0-4f86-a9c2-02261367522a",
+            "b6a3922d-2f71-476e-9e47-112db9c77708"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1869,
+          "duration": 1728,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "553cdbe3-2827-479f-aaad-6ff6e55a4aea",
+          "uuid": "1775ae47-b8ea-47a6-a28b-6fb05e323f62",
           "title": "As a User, I want to get booking id",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\get.booking.id.test.js",
           "file": "\\test\\scenario\\get.booking.id.test.js",
@@ -239,7 +239,7 @@
               "title": "should sucesfully get booking id when insert a valid data",
               "fullTitle": "As a User, I want to get booking id should sucesfully get booking id when insert a valid data",
               "timedOut": false,
-              "duration": 1274,
+              "duration": 1702,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -248,26 +248,26 @@
               "context": null,
               "code": "const response = await herokuApi.getBookingId();\nassert.equal(response.status, 200);\nassert.jsonSchema(response.data, shcema.BOOKINGID_SCHEMA);",
               "err": {},
-              "uuid": "16cc8986-5ec8-429b-b264-a81334652b51",
-              "parentUUID": "553cdbe3-2827-479f-aaad-6ff6e55a4aea",
+              "uuid": "f8e490f9-f502-4264-9f59-5e1a59dffdbf",
+              "parentUUID": "1775ae47-b8ea-47a6-a28b-6fb05e323f62",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "16cc8986-5ec8-429b-b264-a81334652b51"
+            "f8e490f9-f502-4264-9f59-5e1a59dffdbf"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1274,
+          "duration": 1702,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "c12c1cd7-0f4e-437b-8614-de3ff4738a0e",
+          "uuid": "abf620f1-1777-4ab9-941a-37843a0c0bfa",
           "title": "As a User, I want to get booking",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\get.booking.test.js",
           "file": "\\test\\scenario\\get.booking.test.js",
@@ -278,7 +278,7 @@
               "title": "should sucesfully get booking when insert a valid data",
               "fullTitle": "As a User, I want to get booking should sucesfully get booking when insert a valid data",
               "timedOut": false,
-              "duration": 899,
+              "duration": 1025,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -287,26 +287,26 @@
               "context": null,
               "code": "const response = await herokuApi.getBooking();\nassert.equal(response.status, 200);\nassert.jsonSchema(response.data, shcema.BOOKING_SCHEMA);",
               "err": {},
-              "uuid": "b711ad57-05aa-430c-9527-f6419310f183",
-              "parentUUID": "c12c1cd7-0f4e-437b-8614-de3ff4738a0e",
+              "uuid": "8bb09134-d921-4291-9981-3face27d5ca1",
+              "parentUUID": "abf620f1-1777-4ab9-941a-37843a0c0bfa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b711ad57-05aa-430c-9527-f6419310f183"
+            "8bb09134-d921-4291-9981-3face27d5ca1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 899,
+          "duration": 1025,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+          "uuid": "efbfb5bb-860d-407c-9239-46052b292c57",
           "title": "Partial Update Booking",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\partial-update.test.js",
           "file": "\\test\\scenario\\partial-update.test.js",
@@ -317,7 +317,7 @@
               "title": "Successfully update additional needs in current booking",
               "fullTitle": "Partial Update Booking Successfully update additional needs in current booking",
               "timedOut": false,
-              "duration": 932,
+              "duration": 942,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -326,8 +326,8 @@
               "context": null,
               "code": "const resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_1);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.additionalneeds, data.PARTIAL_UPDATE_CASE_1.additionalneeds);",
               "err": {},
-              "uuid": "50f5afe5-0750-487f-997e-18898d4adba0",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "339dd53a-b7d8-4615-88e0-944d9277a53c",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -335,7 +335,7 @@
               "title": "Successfully update firstname in current booking",
               "fullTitle": "Partial Update Booking Successfully update firstname in current booking",
               "timedOut": false,
-              "duration": 973,
+              "duration": 956,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -344,8 +344,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_CASE_2);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_2);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.firstname, data.PARTIAL_UPDATE_CASE_2.firstname);",
               "err": {},
-              "uuid": "468885a9-8cd7-4c5d-b51e-bdebcffe721f",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "8986b10e-9a64-472d-8591-704cac125b96",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -353,7 +353,7 @@
               "title": "Successfully update lastname of in current booking",
               "fullTitle": "Partial Update Booking Successfully update lastname of in current booking",
               "timedOut": false,
-              "duration": 984,
+              "duration": 923,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -362,8 +362,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_CASE_3);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_3);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.lastname, data.PARTIAL_UPDATE_CASE_3.lastname);",
               "err": {},
-              "uuid": "a583a96a-5e01-43a4-bfc2-f4acd3c4fdc2",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "c9405b02-1d10-41fb-9555-cbd8e9e0f8f6",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -371,7 +371,7 @@
               "title": "Successfully update total price in current booking",
               "fullTitle": "Partial Update Booking Successfully update total price in current booking",
               "timedOut": false,
-              "duration": 846,
+              "duration": 995,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -380,8 +380,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_CASE_4);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_4);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.totalprice, data.PARTIAL_UPDATE_CASE_4.totalprice);",
               "err": {},
-              "uuid": "2a233ba3-4fb3-4efe-95c2-e7f644019c2f",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "6eeebdbb-6973-466e-a5cb-dec96b2db162",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -389,7 +389,7 @@
               "title": "Successfully update status deposit paid in current booking",
               "fullTitle": "Partial Update Booking Successfully update status deposit paid in current booking",
               "timedOut": false,
-              "duration": 947,
+              "duration": 1013,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -398,8 +398,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_CASE_5);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_5);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.depositpaid, data.PARTIAL_UPDATE_CASE_5.depositpaid);",
               "err": {},
-              "uuid": "728fce91-c1b6-44e9-b739-778a9ed5a192",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "1af7d61b-bae4-41aa-8211-6ac6356af928",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -407,7 +407,7 @@
               "title": "Successfully update dates in current booking",
               "fullTitle": "Partial Update Booking Successfully update dates in current booking",
               "timedOut": false,
-              "duration": 953,
+              "duration": 915,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -416,8 +416,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_CASE_6);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_6);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.bookingdates[0], data.PARTIAL_UPDATE_CASE_6.bookingdates[0]);\nassert.equal(resPartialUpdate.data.bookingdates[1], data.PARTIAL_UPDATE_CASE_6.bookingdates[1]);",
               "err": {},
-              "uuid": "81206b12-5d9c-4ffa-88a8-243b1c14cc3a",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "57e67145-2e97-4b09-8813-9f83d40f1516",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -425,7 +425,7 @@
               "title": "Successfully update two data in current booking",
               "fullTitle": "Partial Update Booking Successfully update two data in current booking",
               "timedOut": false,
-              "duration": 912,
+              "duration": 872,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -434,8 +434,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_CASE_7.lastname);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_7);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.firstname, data.PARTIAL_UPDATE_CASE_7.firstname);\nassert.equal(resPartialUpdate.data.lastname, data.PARTIAL_UPDATE_CASE_7.lastname);",
               "err": {},
-              "uuid": "3b658496-1b5f-4da4-bde6-659c10452189",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "6223b2fb-7268-4c1a-87f4-50a8fa85b640",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -443,7 +443,7 @@
               "title": "Successfully update some data in current booking",
               "fullTitle": "Partial Update Booking Successfully update some data in current booking",
               "timedOut": false,
-              "duration": 930,
+              "duration": 979,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -452,8 +452,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_CASE_8);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_CASE_8);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.jsonSchema(resPartialUpdate.data, schema.UPDATE_SCHEMA);\nassert.equal(resPartialUpdate.data.totalprice, data.PARTIAL_UPDATE_CASE_8.totalprice);\nassert.equal(resPartialUpdate.data.depositpaid, data.PARTIAL_UPDATE_CASE_8.depositpaid);\nassert.equal(resPartialUpdate.data.bookingdates[0], data.PARTIAL_UPDATE_CASE_8.bookingdates[0]);\nassert.equal(resPartialUpdate.data.bookingdates[1], data.PARTIAL_UPDATE_CASE_8.bookingdates[1]);\nassert.equal(resPartialUpdate.data.additionalneeds, data.PARTIAL_UPDATE_CASE_8.additionalneeds);",
               "err": {},
-              "uuid": "c9bcf176-34b0-4f6b-b8c2-7e8e87eef7f5",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "36b9b99f-3d81-4051-9fa7-7f55e8b4ee03",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -461,7 +461,7 @@
               "title": "Successfully partial update with emptying some data",
               "fullTitle": "Partial Update Booking Successfully partial update with emptying some data",
               "timedOut": false,
-              "duration": 848,
+              "duration": 892,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -470,8 +470,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_EMPTY);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_EMPTY);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.isNull(resPartialUpdate.data.firstname, data.PARTIAL_UPDATE_EMPTY.firstname);\nassert.isNull(resPartialUpdate.data.totalprice, data.PARTIAL_UPDATE_EMPTY.totalprice);\nassert.isNull(resPartialUpdate.data.additionalneeds, data.PARTIAL_UPDATE_EMPTY.additionalneeds);",
               "err": {},
-              "uuid": "5ebc8c2b-929c-4b76-afa3-a1e8b53a3361",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "154eda19-e895-429d-b7fb-8f06aab1e988",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -479,7 +479,7 @@
               "title": "Successfully partial update with emptying some data",
               "fullTitle": "Partial Update Booking Successfully partial update with emptying some data",
               "timedOut": false,
-              "duration": 934,
+              "duration": 979,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -488,8 +488,8 @@
               "context": null,
               "code": "//console.log(data.PARTIAL_UPDATE_EMPTY);\nconst resPartialUpdate = await herokuApi.partial_update(data.PARTIAL_UPDATE_EMPTY);\n//console.log(resPartialUpdate);\nassert.equal(resPartialUpdate.status, 200);\nassert.isNull(resPartialUpdate.data.firstname, data.PARTIAL_UPDATE_EMPTY.firstname);\nassert.isNull(resPartialUpdate.data.totalprice, data.PARTIAL_UPDATE_EMPTY.totalprice);\nassert.isNull(resPartialUpdate.data.additionalneeds, data.PARTIAL_UPDATE_EMPTY.additionalneeds);",
               "err": {},
-              "uuid": "f8f1b31d-1e31-4899-98da-9ad5f401b418",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "e5e5dc1a-c0b6-4bab-999b-645a04510497",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -497,7 +497,7 @@
               "title": "Failed partial update with invalid data",
               "fullTitle": "Partial Update Booking Failed partial update with invalid data",
               "timedOut": false,
-              "duration": 900,
+              "duration": 951,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -510,8 +510,8 @@
                 "estack": "AssertionError: expected 200 to equal 422\n    at Context.<anonymous> (file:///E:/QA/Automation/NEST/API/batch9/test/scenario/partial-update.test.js:139:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 200\n+ 422\n"
               },
-              "uuid": "0e428c7d-0bbf-4e1f-8d2b-e5ab3ebc1f22",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "80eab75e-8582-487f-8aea-a1ac387135ae",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             },
@@ -519,7 +519,7 @@
               "title": "Failed partial update with invalid data",
               "fullTitle": "Partial Update Booking Failed partial update with invalid data",
               "timedOut": false,
-              "duration": 999,
+              "duration": 1026,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -532,38 +532,38 @@
                 "estack": "AssertionError: expected 200 to equal 422\n    at Context.<anonymous> (file:///E:/QA/Automation/NEST/API/batch9/test/scenario/partial-update.test.js:150:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 200\n+ 422\n"
               },
-              "uuid": "c7a0bf32-7986-45ca-be0e-9e0733ac7f8e",
-              "parentUUID": "d4d5b7f0-b4c6-403a-a995-a9afda2b8902",
+              "uuid": "635077d3-0c4e-4ed2-b114-5928f516d234",
+              "parentUUID": "efbfb5bb-860d-407c-9239-46052b292c57",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "50f5afe5-0750-487f-997e-18898d4adba0",
-            "468885a9-8cd7-4c5d-b51e-bdebcffe721f",
-            "a583a96a-5e01-43a4-bfc2-f4acd3c4fdc2",
-            "2a233ba3-4fb3-4efe-95c2-e7f644019c2f",
-            "728fce91-c1b6-44e9-b739-778a9ed5a192",
-            "81206b12-5d9c-4ffa-88a8-243b1c14cc3a",
-            "3b658496-1b5f-4da4-bde6-659c10452189",
-            "c9bcf176-34b0-4f6b-b8c2-7e8e87eef7f5",
-            "5ebc8c2b-929c-4b76-afa3-a1e8b53a3361",
-            "f8f1b31d-1e31-4899-98da-9ad5f401b418"
+            "339dd53a-b7d8-4615-88e0-944d9277a53c",
+            "8986b10e-9a64-472d-8591-704cac125b96",
+            "c9405b02-1d10-41fb-9555-cbd8e9e0f8f6",
+            "6eeebdbb-6973-466e-a5cb-dec96b2db162",
+            "1af7d61b-bae4-41aa-8211-6ac6356af928",
+            "57e67145-2e97-4b09-8813-9f83d40f1516",
+            "6223b2fb-7268-4c1a-87f4-50a8fa85b640",
+            "36b9b99f-3d81-4051-9fa7-7f55e8b4ee03",
+            "154eda19-e895-429d-b7fb-8f06aab1e988",
+            "e5e5dc1a-c0b6-4bab-999b-645a04510497"
           ],
           "failures": [
-            "0e428c7d-0bbf-4e1f-8d2b-e5ab3ebc1f22",
-            "c7a0bf32-7986-45ca-be0e-9e0733ac7f8e"
+            "80eab75e-8582-487f-8aea-a1ac387135ae",
+            "635077d3-0c4e-4ed2-b114-5928f516d234"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 11158,
+          "duration": 11443,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "bc88d05b-6243-453f-80e4-e2ce7628b07d",
+          "uuid": "c4966f8a-74f2-49b0-baa7-62fe7ea9773d",
           "title": "Ping - Check Health",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\ping.test.js",
           "file": "\\test\\scenario\\ping.test.js",
@@ -574,7 +574,7 @@
               "title": "Verify Simple Health Check Endpoint is up and running",
               "fullTitle": "Ping - Check Health Verify Simple Health Check Endpoint is up and running",
               "timedOut": false,
-              "duration": 892,
+              "duration": 955,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -583,26 +583,26 @@
               "context": null,
               "code": "const response = await herokuApi.ping();\nassert.equal(response.status, 201);\nassert.equal(response.statusText, \"Created\");",
               "err": {},
-              "uuid": "a06e83d8-0041-442f-8d74-bf3e1448192e",
-              "parentUUID": "bc88d05b-6243-453f-80e4-e2ce7628b07d",
+              "uuid": "b766f75f-1219-4a4c-85d6-aa8d560578e5",
+              "parentUUID": "c4966f8a-74f2-49b0-baa7-62fe7ea9773d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a06e83d8-0041-442f-8d74-bf3e1448192e"
+            "b766f75f-1219-4a4c-85d6-aa8d560578e5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 892,
+          "duration": 955,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "c566585c-3aa3-4322-8cca-2a192e32bcc7",
+          "uuid": "a3051fac-2e96-4237-af64-ee2190bcd49e",
           "title": "updatebooking",
           "fullFile": "E:\\QA\\Automation\\NEST\\API\\batch9\\test\\scenario\\update.test.js",
           "file": "\\test\\scenario\\update.test.js",
@@ -613,7 +613,7 @@
               "title": "should sucesfully update booking",
               "fullTitle": "updatebooking should sucesfully update booking",
               "timedOut": false,
-              "duration": 912,
+              "duration": 908,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -626,8 +626,8 @@
                 "estack": "AssertionError: expected 500 to equal 200\n    at Context.<anonymous> (file:///E:/QA/Automation/NEST/API/batch9/test/scenario/update.test.js:28:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 500\n+ 200\n"
               },
-              "uuid": "ad471fd4-7179-40fb-a42e-f8cc7cdf545a",
-              "parentUUID": "c566585c-3aa3-4322-8cca-2a192e32bcc7",
+              "uuid": "bf779990-482e-41db-8f1c-48e8eeb630cf",
+              "parentUUID": "a3051fac-2e96-4237-af64-ee2190bcd49e",
               "isHook": false,
               "skipped": false
             }
@@ -635,11 +635,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "ad471fd4-7179-40fb-a42e-f8cc7cdf545a"
+            "bf779990-482e-41db-8f1c-48e8eeb630cf"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 912,
+          "duration": 908,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

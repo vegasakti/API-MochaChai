@@ -22,7 +22,7 @@ describe('booking', () => {
             },
             "additionalneeds" : "Breakfast"
         }
-        const response = await herokuApi.booking(data.VALID_BOOKING);
+        const response = await herokuApi.booking(data.CREATE);
         assert.equal(response.status, 200);
         assert.jsonSchema(response.data, CREATE_SCHEMA.JsonSchema);
         
